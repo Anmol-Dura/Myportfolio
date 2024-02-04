@@ -115,6 +115,29 @@ footer {
     justify-content: center;
     align-items: center;
     height: 20vh;
-    background-color: seagreen;
+    background-color: rgb(186, 226, 43);
     z-index: 100;
+}
+
+/*changing the color of the buttons when we hover on it*/
+.information li:hover{
+    background-color: rgb(43, 156, 226);
+    /* color: rgb(186, 226, 43); */
+    transition: 0.5s;
+    box-shadow: none;
+}
+/*changing the text color of the a when hovered*/
+.information a:hover{
+    color: rgb(186, 226, 43);
+    transition: 0.5s;
+}
+
+header li:hover{
+    box-shadow: none;
+    background-color: teal;
+    transition: 1s;
+}
+header li:hover a{
+    color: white;
+    transition: 1s;
 }
