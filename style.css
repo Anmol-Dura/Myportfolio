@@ -1,53 +1,120 @@
-*{
+* {
     padding: o;
     margin: 0;
     box-sizing: border-box;
     /* border: 2px solid black; */
 }
 
-main{
+body{
+    overflow: auto;
+}
+/* designing the header */
+header {
+    background-color: rgb(43, 156, 226);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+main {
     display: flex;
+    margin: 2rem 2rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 10px;
     height: 100vh;
 }
-main .intro{
+
+.intro,
+.information {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 10px;
 }
-main h1,p{
+
+main .intro {
+    padding-top: 1rem;
+}
+
+main .information {
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+main {
+    margin-top: 9rem;
+}
+
+main .information h2 {
+    font-size: 3rem;
+    text-align: center;
+    /* background-color: rgb(186, 226, 43); */
+    display: inline-block;
+}
+
+main h1,
+p {
     display: inline-block;
     font-size: 3rem;
     /* background-color: blueviolet; */
 }
-main h1,p{
+
+main h1,
+p {
     text-align: center;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 
 }
-li{
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    background-color: rgb(43, 156, 226);
+}
+
+li {
     list-style: none;
     text-decoration: none;
-    margin: 10px;
+    width: 33%;
+    /* margin: 10px; */
+    /* border-radius: 2rem; */
     padding: 10px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    margin: 20px;
+    margin-top: 3rem;
+    /* box-shadow: 5px 5px 5px black; */
+    box-shadow: 40px -16px teal;
     background-color: rgb(186, 226, 43);
     color: white;
     font-size: 2rem;
     text-align: center;
-
 }
-footer{
+
+
+.divider {
+    width: 100%;
+    background-color: rgb(212, 24, 24);
+}
+
+
+/* designing the footer */
+footer {
+    margin-top: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 20vh;
+    background-color: seagreen;
+    z-index: 100;
 }
